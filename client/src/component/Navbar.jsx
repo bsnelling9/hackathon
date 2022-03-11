@@ -6,14 +6,12 @@ const NavBar = () => {
     <header className="nav-bar">
         <div className='nav-bar__container'>
             <Link to='/'>
-                <img 
-                    className="nav-bar--img"
-
-                />
+                <img
+                    className="nav-bar--img"/>
             </Link>
             <div className='nav-bar__search'>
                 <div className='nav-bar__search--container'>
-                    <img className="nav-bar__search--img" /> 
+                    <img className="nav-bar__search--img" />
                     <input className='nav-bar__search--input'
                         type='text'
                         placeholder='Search'
@@ -32,7 +30,7 @@ const NavBar = () => {
                 <span className='btn__text'>upload</span>
             </Link>
         </div>
-    </header> 
+    </header>
   )
 }
 
