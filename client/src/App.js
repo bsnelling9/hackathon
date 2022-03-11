@@ -1,9 +1,7 @@
-import './App.css';
-import Navbar from "./component/Navbar";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from './component/Navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Review from './pages/Review';
-
+import './App.scss';
 
 function App() {
   return (
@@ -11,9 +9,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element = {<Home />} exact/>
-          <Route path='/home' element = {<Home />}/>
-          <Route path='/Review' element = {<Review />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
