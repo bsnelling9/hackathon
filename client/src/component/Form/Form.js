@@ -17,7 +17,8 @@ const Form = ({ currentRestaurant, setCurrentRestaurant }) => {
           id: currentRestaurant.id,
         }
       );
-      setCurrentRestaurant({ ...currentRestaurant, ...data.data });
+      console.log(data.data);
+      setCurrentRestaurant({ ...data.data });
     };
     postNewComment();
   };

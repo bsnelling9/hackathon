@@ -45,17 +45,12 @@ router.post('/:id', (req, res) => {
       author: req.body.author,
       comment: req.body.comment,
     };
-
     foundRestaurant.reviews.push(newReview);
 
-    const newComments = {
-      ...foundRestaurant,
-      reviews: [...foundRestaurant.reviews, newReview],
-    };
     fs.writeFile(restaurantPath, JSON.stringify(reviewData), () => {
       res.json({
         message: 'data written to file successfully',
-        data: newComments,
+        data: foundRestaurant,
       });
     });
   });
