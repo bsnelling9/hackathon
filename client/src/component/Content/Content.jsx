@@ -26,15 +26,16 @@ export default class Content extends Component {
           <ul className="content__list">
             {this.state.restaurantArray &&
               this.state.restaurantArray.map((restaurant, i) => {
-                console.log(restaurant.image);
                 return (
                   <li className="content__item" key={i}>
-                    <img
-                      className="content__image"
-                      alt={restaurant.name}
-                      src={restaurant.image ? restaurant.image : LogoImage}
-                    ></img>
-                    <p className="content__name">{restaurant.name}</p>
+                    <Link to={`/${restaurant.id}`} className="content__link">
+                      <img
+                        className="content__image"
+                        alt={restaurant.name}
+                        src={restaurant.image ? restaurant.image : LogoImage}
+                      ></img>
+                      <p className="content__name">{restaurant.name}</p>
+                    </Link>
                   </li>
                 );
               })}
