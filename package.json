@@ -9,11 +9,12 @@
     "install-all": "npm install && npm run client-install && npm run server-install",
     "dev": "npm-run-all -p dev-server dev-client",
     "dev-client": "npm start --prefix client",
-    "dev-server": "npm run watch --prefix server",
+    "dev-server": "npm run watch --prefix server"
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/stang1207/pair-programming.git"
   },
-  "repository": {},
   "author": "",
   "license": "ISC",
   "bugs": {
