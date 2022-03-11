@@ -31,6 +31,9 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0.25rem;
   }
+  &__search::placeholder {
+    color: white;
+  }
 
   &__btn {
     color: white;
