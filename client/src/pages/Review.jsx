@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Review extends Component {
+  componentDidMount() {
+    this.fetchRestaurantData();
+  }
+  fetchRestaurantData = async () => {};
+
   render() {
     return (
       <div className="review">

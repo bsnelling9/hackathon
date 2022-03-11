@@ -18,9 +18,11 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
-  &__item {
-    background-color: rgba(0, 0, 0, 0.1);
+  &__link {
+    color: black;
     padding: 2rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
     max-height: 15rem;
     display: flex;
     flex-direction: column;

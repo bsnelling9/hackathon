@@ -1,6 +1,7 @@
 import Navbar from './component/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Review from './pages/Review';
 import './App.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/:id" element={<Review />} />
         </Routes>
       </Router>
     </div>
