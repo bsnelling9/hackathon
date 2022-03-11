@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Icon from '../../assets/images/icon.jpg';
 import './Navbar.scss';
 
 const NavBar = () => {
@@ -6,7 +7,7 @@ const NavBar = () => {
     <header className="header">
       <nav className="nav">
         <Link to="/" className="nav__logo-box">
-          Logo
+          <img src={Icon} class="nav__icon"/>
         </Link>
         <input className="nav__search" placeholder="Search..."></input>
         <Link className="nav__btn" to="/upload">
