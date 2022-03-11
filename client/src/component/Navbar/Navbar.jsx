@@ -5,9 +5,9 @@ import './Navbar.scss';
 const NavBar = () => {
   return (
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav">
         <Link to="/" className="nav__logo-box">
-          <img className="nav__logo" src={LogoImage} alt="img" />
+          Logo
         </Link>
         <input className="nav__search" placeholder="Search..."></input>
         <Link className="nav__btn" to="/upload">
