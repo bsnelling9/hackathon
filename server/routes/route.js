@@ -15,10 +15,11 @@ router.get('/', (req, res) => {
 });
 
 // GET route for a review with a specific ID
-router.get('/:id', (res, req) => {
+router.get('/:id', (req, res) => {
   fs.readFile(restaurantPath, 'utf8', (err, data) => {
     const reviewData = JSON.parse(data);
     // look for the review with the id
+    console.log(req.params);
     const foundReview = reviewData.find(
       (review) => review.id === req.params.id
     );

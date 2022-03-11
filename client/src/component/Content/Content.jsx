@@ -19,6 +19,7 @@ export default class Content extends Component {
     this.setState({ restaurantArray: data });
   };
   render() {
+    console.log(this.state.restaurantArray);
     return (
       <section className="content">
         <div className="content__container">

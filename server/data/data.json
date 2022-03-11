@@ -5,7 +5,7 @@
     "location": "Mos Eisley, Tatooine",
     "genre": "italian, no droids",
     "rating": "1.5/5",
-    "image": "https://www.disneytouristblog.com/wp-content/uploads/2019/07/docking-bay-7-food-cargo-star-wars-galaxys-edge-disney-counter-service-restaurant-239.jpg",
+    "image": "http://localhost:8000/images/mos-eisley-cantina.jpeg",
     "reviews": [
       {
         "id": "35bba08b-1b51-4153-ba7e-6da76b5ec1b9",
@@ -30,7 +30,7 @@
     "location": "CoCo Town, Coruscant",
     "genre": "home styled cooked meals, no droids",
     "rating": "2.5/5",
-    "images": "https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+    "image": "http://localhost:8000/images/Dexs_diner.jpeg",
     "reviews": [
       {
         "id": "ade82e25-6c87-4403-ba35-47bdff93a51c",

@@ -4,7 +4,6 @@ var logger = require('morgan');
 var cors = require('cors');
 
 var indexRouter = require('./routes/route');
-var usersRouter = require('./routes/users');
 
 var app = express();
 // middleware
@@ -15,7 +14,6 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 app.listen(8000, (req, res, next) => {
   console.log('listening on port 8000');
