@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Hero from '../src/component/Hero';
-import Content from '../src/component/Content';
+import Hero from '../component/Hero';
+import Content from '../component/Content';
 
 
 export default class Home extends Component {
