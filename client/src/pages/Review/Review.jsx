@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import './Review.scss';
+import Form from '../../component/Form/Form';
 const Review = () => {
   const { id } = useParams();
   const [currentRestaurant, setCurrentRestaurant] = useState(null);
@@ -16,6 +17,8 @@ const Review = () => {
     };
     fetchData();
   }, []);
+
+  console.log(currentRestaurant);
 
   return (
     <section className="review">
@@ -32,37 +35,15 @@ const Review = () => {
             </h2>
           </div>
         </div>
-        <form className="form">
-          <div className="form__info">
-            <label className="form__label">
-              Author
-              <input
-                className="form__input form__input--author"
-                type="text"
-                name="author"
-                placeholder="Author name"
-              ></input>
-            </label>
-            <label className="form__label">
-              Review
-              <textarea
-                className="form__comment"
-                type="text"
-                name="comment"
-                placeholder="Add a review here"
-              ></textarea>
-            </label>
-          </div>
-          <button className="form__submit" type="submit">
-            Submit
-          </button>
-        </form>
-
+        <Form
+          currentRestaurant={currentRestaurant}
+          setCurrentRestaurant={setCurrentRestaurant}
+        />
         <ul className="review__comments">
           {currentRestaurant &&
-            currentRestaurant.reviews.map((review) => {
+            currentRestaurant.reviews.map((review, i) => {
               return (
-                <li className="review__box">
+                <li className="review__box" key={i}>
                   <p className="review__comment">{review.comment}</p>
                   <p className="review__author"> - {review.author}</p>
                 </li>

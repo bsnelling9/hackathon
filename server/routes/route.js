@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
   // reads the JSON file and returns the data
   fs.readFile(restaurantPath, 'utf8', (err, data) => {
     const reviewData = JSON.parse(data);
-    console.log(reviewData);
     return res.json(reviewData);
   });
 });
@@ -33,22 +32,31 @@ router.get('/:id', (req, res) => {
 });
 
 // POST route for a submitting a review
-router.post('/', (req, res) => {
+router.post('/:id', (req, res) => {
+  const { id } = req.params;
   // reads the JSON file
   fs.readFile(restaurantPath, 'utf8', (err, data) => {
     const reviewData = JSON.parse(data);
+    const foundRestaurant = reviewData.find(
+      (restaurant) => restaurant.id === id
+    );
     const newReview = {
       id: uuidv4(),
       author: req.body.author,
       comment: req.body.comment,
     };
-  });
-  reviewData.push(newReview);
-  // writes to the JSON file to add the newly uploaded video
-  fs.writeFile(restaurantPath, JSON.stringify(reviewData), () => {
-    res.json({
-      message: 'data written to file successfully',
-      data: reviewData,
+
+    foundRestaurant.reviews.push(newReview);
+
+    const newComments = {
+      ...foundRestaurant,
+      reviews: [...foundRestaurant.reviews, newReview],
+    };
+    fs.writeFile(restaurantPath, JSON.stringify(reviewData), () => {
+      res.json({
+        message: 'data written to file successfully',
+        data: newComments,
+      });
     });
   });
 });
