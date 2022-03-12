@@ -5,7 +5,6 @@ import axios from 'axios';
 const Form = ({ currentRestaurant, setCurrentRestaurant }) => {
   const [author, setAuthor] = useState('');
   const [comment, setComment] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const postNewComment = async () => {
@@ -17,8 +16,9 @@ const Form = ({ currentRestaurant, setCurrentRestaurant }) => {
           id: currentRestaurant.id,
         }
       );
-      console.log(data.data);
       setCurrentRestaurant({ ...data.data });
+      setAuthor('');
+      setComment('');
     };
     postNewComment();
   };

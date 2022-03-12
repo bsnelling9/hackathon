@@ -9,17 +9,14 @@ export default class Content extends Component {
   state = {
     restaurantArray: [],
   };
-
   componentDidMount() {
     this.fetchData();
   }
-
   fetchData = async () => {
     const { data } = await axios.get('http://localhost:8000/');
     this.setState({ restaurantArray: data });
   };
   render() {
-    console.log(this.state.restaurantArray);
     return (
       <section className="content">
         <div className="content__container">

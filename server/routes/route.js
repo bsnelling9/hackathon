@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const restaurantPath = require('path').join(__dirname, '../data/data.json');

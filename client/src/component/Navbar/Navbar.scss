@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
   @extend .container;
 
   &__logo-box {
@@ -37,6 +37,7 @@
     color: white;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0.25rem;
+    margin-right: 2rem;
   }
   &__search::placeholder {
     color: white;
@@ -51,6 +52,10 @@
 
     @include tablet {
       padding: 1rem 1.5rem;
+    }
+
+    &:hover {
+      background-color: #37837f;
     }
   }
 }

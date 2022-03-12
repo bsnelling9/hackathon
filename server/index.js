@@ -1,11 +1,10 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var cors = require('cors');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const cors = require('cors');
 
-var indexRouter = require('./routes/route');
-
-var app = express();
+const indexRouter = require('./routes/route');
+const app = express();
 // middleware
 app.use(logger('dev'));
 app.use(express.json());

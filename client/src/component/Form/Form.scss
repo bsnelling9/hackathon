@@ -1,33 +1,30 @@
 .form {
   display: flex;
   flex-direction: column;
-
-  .form__info {
+  &__info {
     display: flex;
     flex-direction: column;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0rem;
+  }
+  &__input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  &__comment {
+    resize: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
 
-    .form__label {
-      display: flex;
-      flex-direction: column;
-      margin: 0.5rem 0rem;
-      .form__input {
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-      }
-      .form__comment {
-        resize: none;
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-      }
-      .form__comment::placeholder {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+    &::placeholder {
+      font-family: Arial, Helvetica, sans-serif;
     }
   }
-
-  .form__submit {
+  &__submit {
     text-decoration: none;
-    // align-self: flex-end;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: #45a29e;
@@ -38,5 +35,8 @@
     width: 100px;
     font-size: 16px;
     margin-top: 0.5rem;
+    &:hover {
+      background-color: #37837f;
+    }
   }
 }
