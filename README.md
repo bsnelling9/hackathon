@@ -3,7 +3,7 @@
 [Click here](https://stonkers.netlify.app/) to see the live demo
 
 ## Screenshots
-<img src="https://github.com/bsnelling9/hackathon/blob/main/images/MeesaReviews-dex.pdf" width=50% height=50%>
+<object src="https://github.com/bsnelling9/hackathon/blob/main/images/MeesaReviews-dex.pdf" type="application/pdf" width=50% height=50%></object>
 <img src="https://github.com/SimonMilord/Capstone-Project/blob/f1e3ddfa87636d26eadaceb042386ce8cde9a21b/Screenshots/Stonkers%20-%20Login.png" width=50% height=50%>
 <img src="https://github.com/SimonMilord/Capstone-Project/blob/f1e3ddfa87636d26eadaceb042386ce8cde9a21b/Screenshots/Stonkers%20-%20Home%20Top.png" width=50% height=50%><img src="https://github.com/SimonMilord/Capstone-Project/blob/f1e3ddfa87636d26eadaceb042386ce8cde9a21b/Screenshots/Stonkers%20-%20Home%20Bottom.png" width=50% height=50%><img src="https://github.com/SimonMilord/Capstone-Project/blob/f1e3ddfa87636d26eadaceb042386ce8cde9a21b/Screenshots/Stonkers%20-%20watchlist.png" width=50% height=50%>
 
