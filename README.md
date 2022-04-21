@@ -4,7 +4,7 @@ hackathon project done in 4 hours at BrainStation
 
 ## Screenshots
 
-<img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews.png" width=35% height=600rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-chal.png" width=35% height=3600rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-dex.png" width=35% height=600rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-italy.png" width=35% height=600rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-nemo.png" width=35% height=600rem>
+<img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews.png" width=50% height=1000rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-chal.png" width=50% height=1000rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-dex.png" width=50% height=1000rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-italy.png" width=50% height=1000rem> <img src="https://github.com/bsnelling9/hackathon/blob/main/images/meesareviews-nemo.png" width=50% height=1000rem>
 
 
 ## Tech Stack
