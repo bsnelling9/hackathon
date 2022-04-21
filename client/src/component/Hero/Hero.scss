@@ -1,8 +1,8 @@
 @use '../../styles/partials' as *;
 
 .hero {
-  min-height: 20vh;
-  max-height: 30vh;
+  min-height: 30rem;
+  max-height: 30rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../assets/images/test.jpg');
   background-size: cover;
@@ -21,7 +21,7 @@
     }
   }
 
-  @include tablet {
-    min-height: 70vh;
-  }
+  // @include tablet {
+  //   min-height: 70vh;
+  // }
 }
