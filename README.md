@@ -1,5 +1,5 @@
-## Demo
-
+## About
+hackathon project done in 4 hours at BrainStation
 
 
 ## Screenshots
