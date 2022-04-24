@@ -1,5 +1,5 @@
 ## About
-hackathon project done in 4 hours at BrainStation
+hackathon project done in 4 hours at BrainStation, where you can post resturant reviews and see what others have posted.
 
 
 ## Screenshots
